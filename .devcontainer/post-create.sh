@@ -22,7 +22,7 @@ curl -fsSL https://raw.githubusercontent.com/steveyegge/beads/main/scripts/insta
 # This MUST run before any other bd command (e.g. the SessionStart `bd prime`
 # hook) auto-creates an empty, prefix-less DB — that half-initialized state makes
 # `bd create` fail with "issue_prefix config is missing".
-bd bootstrap
+bd bootstrap --yes
 
 # Install Claude Code
 curl -fsSL https://claude.ai/install.sh | bash
